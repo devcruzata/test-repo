@@ -1,0 +1,219 @@
+﻿@model Project.Web.Models.QueryModel
+
+@{
+    Layout = null;
+}
+
+<script src="~/Scripts/jquery-1.11.1.js"></script>
+
+<ul class="nav navbar-nav navbar-right menu">
+    <li><a href="#" class="btn btn-default btn-query launch-modal" data-toggle="modal"
+        data-target="#exampleModal">Request A Quote</a></li>
+</ul>
+
+<script type="text/javascript">
+   
+
+    $(document).ready(function () {
+       
+        $(function () {
+            $('#PersonName').focusout(function (event) {
+                event.preventDefault();
+                var name = $("#PersonName").val();
+                
+                if(name.trim() != "") {
+                    $("#error_msg_name").hide();
+                    return false;
+                }
+                if(name.trim()=="") {
+                   // $("#error_msg_name").html("<p style="color: #172b42"> Please Enter Your Name</p>");
+                    $("#error_msg_name").show();
+                    return true;
+                }
+            });
+            $('#Email').focusout(function (event) {
+                event.preventDefault();
+                var emailRegex = /^[A-Za-z0-9._]*\@@[A-Za-z]*\.[A-Za-z]{2,5}$/; 
+                var email = $("#Email").val();
+                if (email.trim() == "") {
+                   
+                    $("#error_msg_email").show();                   
+                   
+                    //return false;
+                }
+                if (email.trim() != "") {
+                    $("#error_msg_email").hide();
+                    //return false;
+                }
+                if (!emailRegex.test(email)) {
+                  
+                    $("#error_msg_email").show();                    
+                  
+                }
+                if (emailRegex.test(email)) {
+                    $("#error_msg_email").hide();
+                }
+                
+            });
+            $('#ContactNumber').focusout(function (event) {
+                event.preventDefault();
+                var cont = $("#ContactNumber").val();
+                
+                if (cont.trim() == "") {
+                  
+                    $("#error_msg_no").show();
+                 
+                   
+                }
+                if (cont.trim() != "") {
+                    $("#error_msg_no").hide();
+                    //return false;
+                }
+                if (cont.length < 10 || cont.length>10) {
+                    $("#error_msg_no").show();
+                }
+                else {
+                    $("#error_msg_no").hide();
+                }
+                
+            });
+            $('#Address').focusout(function (event) {
+                event.preventDefault();
+                var address = $("#Address").val();
+                if (address.trim() == "" || address.length > 199) {
+                    $("#error_msg_address").show();
+                    return false;
+                }
+                if (address.trim() != "" ) {
+                    $("#error_msg_address").hide();
+                    return true;
+                }
+            });
+           
+            $('#City').focusout(function (event) {
+                event.preventDefault();
+                var city = $("#City").val();
+                if (city.trim() == "" || city.length > 49) {
+                    $("#error_msg_city" ).show()
+                    return false;
+                }
+                if (city.trim() != "") {
+                    $("#error_msg_city").hide()
+                    return true;
+                }
+            });
+            $('#Pincode').focusout(function (event) {
+                event.preventDefault();
+                var pincode = $("#Pincode").val();
+                if (pincode.length>10) {
+                    $("#error_msg_pin").show()
+                    return false;
+                }
+                else {
+                    $("#error_msg_pin").hide()
+                    return true;
+                }
+            });
+            $('#Comments').focusout(function (event) {
+                event.preventDefault();
+                var comments = $("#Comments").val();
+                if (comments.length > 999) {
+                    $("#error_msg_comments").show()
+                    return false;
+                }
+                else {
+                    $("#error_msg_comments").hide()
+                    return true;
+                }
+            });
+           
+            $('#lstServices').focusout(function (event) {
+                event.preventDefault();
+                var service = $("#lstServices").val();
+              
+                if (service.trim() == "0") {
+                    $("#error_msg_service").show()
+                    return false;
+                }
+                if (service.trim() != "0") {
+                    $("#error_msg_service").hide()
+                   return true;
+                }
+            });
+             $('#sb_btn').click(function (event) {
+                 event.preventDefault();
+                 $(this).attr('disabled', true);
+                 var name = $("#PersonName").val();
+                 var email = $("#Email").val();
+                 var cont = $("#ContactNumber").val();
+                 var address = $("#Address").val();
+                 var city = $("#City").val();
+                 var service = $("#lstServices").val();
+                 
+                 if (name.trim() == "" || email.trim() == "" || cont.trim() == "" || address.trim() == "" || city.trim() == "" || service.trim() == "") {
+                     $("#error_msg_form").show();
+                     // return false;
+                 }
+                 else {
+                     $("#error_msg_form").hide();
+                     var f = $('#frm_data')
+                     var formData = f.serialize();
+                     var url = f.attr("action")
+                     $.post(url, formData, function (data) {
+                         if (data == "success") {                            
+                             $("#PersonName").val('');
+                             $("#Email").val('');
+                             $("#ContactNumber").val('');
+                             $("#Address").val('');
+                             $("#City").val('');
+                             $("#Pincode").val('');
+                             $("#Comments").val('');
+                             $("#lstServices").val(0);
+                             $('#sb_btn').attr('disabled', false);
+                             $('#exampleModal').modal('hide');
+                             var headingName = '<div class="text-center"><p style="color:#A1CC3A; font-size:19px;">Your Query is successfully registerd . We will get back to you shortly</p> <input type="button" class="btn btn-default text-center pop_btn_ok b-close"  id="btnclosepopup" value="OK" /></div>';
+                             $("#msg").html(headingName);
+                             $("#popup").css({ "height": "170px", "width": "350px", "background": "white", "margin-top": "30px;" });
+                             $("#msg").css({ "padding-top": "0px" });
+                             $('#popup').bPopup({
+                                 modalClose: false,
+                                 opacity: 0.6,
+                                 positionStyle: 'fixed',
+                             });
+
+
+                         }
+                         if (data == "error") {
+                             $('#sb_btn').attr('disabled', false);
+                             $("#error_msg_form").html("<p>Error occured while processing your request . Please try after some time.</p>");
+                             $("#error_msg_form").show();
+                         }
+                     });
+                 }
+                          
+            });
+        });
+
+        $('#cross_btn').click(function (event) {
+            $("#PersonName").val('');
+            $("#Email").val('');
+            $("#ContactNumber").val('');
+            $("#Address").val('');
+            $("#City").val('');
+            $("#Pincode").val('');
+            $("#Comments").val('');
+            $("#lstServices").val(0);
+            $('#sb_btn').attr('disabled', false);
+            $("#error_msg_form").hide();
+            $("#error_msg_name").hide();
+            $("#error_msg_email").hide();
+            $("#error_msg_no").hide();
+            $("#error_msg_address").hide();
+            $("#error_msg_city").hide();
+            $("#error_msg_pin").hide();
+            $("#error_msg_service").hide();
+            $("#error_msg_comments").hide();
+
+        });
+    });
+</script>

@@ -1,0 +1,44 @@
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\BAL.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\BAL.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\DAL.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Project.Entity.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Project.ViewModel.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.Unity.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\DAL.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Project.Entity.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Project.ViewModel.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.ServiceLocation.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.Unity.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\bin\Release\Microsoft.Practices.Unity.Interception.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\obj\Release\BAL.csprojResolveAssemblyReference.cache
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\obj\Release\BAL.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\BAL\obj\Release\BAL.pdb
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\BAL.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\BAL.pdb
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\DAL.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Project.Entity.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Project.ViewModel.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.Unity.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.Unity.Interception.dll
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\DAL.pdb
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Project.Entity.pdb
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Project.ViewModel.pdb
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.ServiceLocation.xml
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.Unity.xml
+E:\WorkSpace Cruzata\Handyman\BAL\bin\Release\Microsoft.Practices.Unity.Interception.xml
+E:\WorkSpace Cruzata\Handyman\BAL\obj\Release\BAL.csprojResolveAssemblyReference.cache
+E:\WorkSpace Cruzata\Handyman\BAL\obj\Release\BAL.dll
+E:\WorkSpace Cruzata\Handyman\BAL\obj\Release\BAL.pdb

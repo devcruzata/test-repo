@@ -1,0 +1,165 @@
+﻿@model Project.Web.Models.UserModel
+@{
+    Layout = "~/Views/Shared/_LayoutPage_Admin.cshtml";
+
+    ViewBag.Title = "Online Kaarigar | Admin-Page";
+}
+
+<script type="text/javascript" src="~/Scripts/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.tablesorter.pager.js"></script>
+
+
+
+
+<div class="container-fluid contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12 about-contant" style="padding-bottom:167px;">
+                    <div class="panel panel-default panel-custom" style="margin-top:100px;">
+                        <div class="table-headerdiv col-sm-12">
+                            <div class="table-header panel-heading col-sm-12 pd-left pd-right">
+                                <div class="col-md-4">
+                                    <input type="text" placeholder="search..." class="form-control search-input search input-search" id="search">
+                                </div>
+                                <div class="col-md-8">
+                                    <button class="btn btn-default btn-newservice" onclick="reload();">Refresh</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body table-mainbody">
+                            <div class="col-sm-12 pd">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover table-custom table-sorter" id="data_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">First Name</th>
+                                                <th class="text-center">Last Name</th>
+                                                <th class="text-center">Email</th>
+                                                <th class="text-center">Contact Number</th>
+                                                <th class="text-center">Building No.</th>
+                                                <th class="text-center">Building Name</th>
+                                                <th class="text-center">Area</th>
+                                                <th class="text-center">City</th>                                                
+                                                <th class="text-center">Date</th>
+                                                <th class="text-center">Type</th>
+                                                <th class="text-center">Service Looking For</th>
+                                                <th class="text-center">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var user in Model.User_List)
+                                            {
+                                                <tr>
+
+                                                    <td class="text-center">@user.User_FirstName</td>
+                                                    <td class="text-center">@user.User_LastName</td>
+                                                    <td class="text-center">@user.User_Email</td>
+                                                    <td class="text-center">@user.User_Contact1</td>
+                                                    <td class="text-center">@user.User_BuildingFlatNumber</td>
+                                                    <td class="text-center">@user.User_BuildingName</td>
+                                                    <td class="text-center">@user.User_Area</td>
+                                                    <td class="text-center">@user.User_City</td>                                                    
+                                                    <td class="text-center">@user.CreatedDate</td>
+                                                    <td class="text-center">@user.User_Type</td>
+                                                    <td class="text-center">@user.Service_Name</td>
+                                                    <td class="text-center">
+                                                        @if (user.Status == "active")
+                                                        {
+                                                            <div class="activeStatus" id="div-@user.User_ID_Auto_PK" status="Inactivate" onclick="ManageActiveInactive('@user.User_ID_Auto_PK')" title="Active User"></div>
+
+                                                        }
+                                                        else
+                                                        {
+                                                            <div class="inactiveStatus" id="div-@user.User_ID_Auto_PK" status="Activate" onclick="ManageActiveInactive('@user.User_ID_Auto_PK')" title="Inactive User"></div>
+
+                                                        }
+
+                                                    </td>
+                                                </tr>
+
+                                            }
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="11" class="text-right">
+                                                    <div class="pagination-custom paginate pager " id="pager">
+                                                        <a href="#" class="first" id="first">first</a> | <a href="#" class="prev" id="prev">previous</a>
+
+                                                        <a href="#" class="next" id="next">next</a> | <a href="#" class="last" id="last">last</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    function ManageActiveInactive(User_ID_Auto_PK) {
+
+        // var result = confirm("Are you sure to change the status of this Query ?");
+        // if (result == true) {
+        var divId = "div-" + User_ID_Auto_PK;
+        var Udata = User_ID_Auto_PK;
+        var url = "/Common/ManageStatus";
+        $.post(url, { tbl_id_auto_pk: Udata, tbl_tbl_name: "user" }, function (data) {
+            if (data == "1") {
+                $("#div-" + User_ID_Auto_PK).attr("status", "Inactivate");
+                $("#" + divId).removeClass("inactiveStatus");
+                $("#" + divId).addClass("activeStatus");
+                $("#successMessageText").text("Property status set to 'Active' Successfully.");
+            }
+            if (data == "0") {
+                $("#div-" + User_ID_Auto_PK).attr("status", "Activate");
+                $("#" + divId).removeClass("activeStatus");
+                $("#" + divId).addClass("inactiveStatus");
+                $("#successMessageText").text("Property status set to 'Inactive' Successfully.");
+            }
+        });
+        // }
+    }
+
+    $(document).ready(function () {
+        $("table")
+		.tablesorter({ widthFixed: true })
+		.tablesorterPager({ container: $("#pager"), size: 100 });
+    });
+    $(document).ready(function () {
+        $('#search').keyup(function (event) {
+            //if esc is pressed or nothing is entered
+
+            if (event.keyCode == 27 || $(this).val() == '') {
+                //if esc is pressed we want to clear the value of search box
+                $(this).val('');
+                //than calling initial stage of table
+                location.reload();
+            }
+                //if there is text, than start searching
+            else {
+                filter('tbody tr', $(this).val());
+            }
+        });
+
+        function filter(selector, query) {
+            query = $.trim(query); //trim white space
+            query = query.replace(/ /gi, '|'); //add OR for regex query
+
+            $(selector).each(function () {
+                ($(this).text().search(new RegExp(query, "i")) < 0) ? $(this).hide().removeClass('visible') : $(this).show().addClass('visible');
+            });
+        }
+    });
+</script>
+<script type="text/javascript">
+    function reload() {
+        location.reload();
+    }
+</script>

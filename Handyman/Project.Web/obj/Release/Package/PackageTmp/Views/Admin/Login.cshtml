@@ -1,0 +1,202 @@
+﻿@model Project.Web.Models.LogOnModel
+@{
+    Layout = null;
+}
+
+
+<!Doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handyman | Login</title>
+    <link rel="icon" type="image/png" href="@Url.Content("~/Content/images/favicon.png")" />
+    <link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/style.css")" type="text/css" />
+    <link href="@Url.Content("~/Content/css/font-awesome.min.css")" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.11.1.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="login-bg">
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top:100px;">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 login-div">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8 text-center login-logo">
+
+                        <img src="../Content/images/logo.png">
+                    </div>
+                    <div class="col-sm-2 ">                       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-8">
+                            <form action="/Admin/UserAuthentication" method="post" id="form_data">
+
+                                <div class="form-group col-sm-12 login-form">
+                                    <input type="text" class="form-control  input-custom-login" placeholder="Your Email" id="UserName" name="UserName" value="@Model.UserName">
+                                    <div id="error_msg_email" style="display:none;">
+                                        <p style="color: red;">Please Enter Your Email</p>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <input type="password" class="form-control input-custom input-custom-login" placeholder="Password" id="Password" name="Password" value="@Model.Password" >
+                                    <div id="error_msg_password" style="display:none;">
+                                        <p style="color: red;">Please Enter Your Password</p>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center">
+                                    
+                                    <button type="submit" class="btn btn-default login-btn" id="sb_btn">Login</button>
+                                </div>
+                                <div class="form-group text-center">
+                                    <div class="checkbox login-check">
+                                        <input type="checkbox" name="RememberMe" id="RememberMe" class="css-checkbox" />
+                                        <label for="RememberMe" class="css-label">keep me logged in</label>
+                                    </div>
+                                    @*checkboxG1*@
+                                </div>
+                                <div class="form-group forgost-passdiv">
+                                    <div class="col-sm-12 for-indiv text-center">
+                                        <a href="#">Forgotten your password?</a>
+                                    </div>
+                                </div>
+                                <div id="error_msg_form" class="text-center" style="display:none;">
+                                    <p style="color:red;">Please Provide Login Credential</p>
+                                </div>
+                            </form>
+                       </div>
+                         <div class="col-sm-2">
+                         </div>
+
+                    </div>
+                 </div>
+               </div>
+               <div class="col-md-4">
+               </div>
+         </div>
+     </div>
+
+                    
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="@Url.Content("~/Scripts/js/jquery.min.js")"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="@Url.Content("~/Scripts/js/bootstrap.min.js")"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+           
+                $('#Password').focusout(function (event) {
+                    event.preventDefault();
+                    var name = $("#Password").val();
+
+                    if (name.trim() != "") {
+                        $("#error_msg_password").hide();
+                        return false;
+                    }
+                    if (name.trim() == "") {
+                        // $("#error_msg_name").html("<p style="color: #172b42"> Please Enter Your Name</p>");
+                        $("#error_msg_password").show();
+                        return true;
+                    }
+                });
+                $('#UserName').focusout(function (event) {
+                    event.preventDefault();
+                    var emailRegex = /^[A-Za-z0-9._]*\@@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+                    var email = $("#UserName").val();
+                    if (email.trim() == "") {
+
+                        $("#error_msg_email").show();
+
+                        //return false;
+                    }
+                    if (email.trim() != "") {
+                        $("#error_msg_email").hide();
+                        //return false;
+                    }
+                    if (!emailRegex.test(email)) {
+
+                        $("#error_msg_email").show();
+
+                    }
+                    if (emailRegex.test(email)) {
+                        $("#error_msg_email").hide();
+                    }
+
+                });
+
+                $('#sb_btn').click(function (event) {
+                    event.preventDefault();
+                    var password = $("#Password").val();
+                    var email = $("#UserName").val();
+                    
+
+                    if (password.trim() == "" || email.trim() == "") {
+                        $("#error_msg_form").show();
+                        // return false;
+                    }
+                    else {
+                        $("#error_msg_form").hide();
+                        var f = $('#form_data')
+                        var formData = f.serialize();                       
+                        var url = f.attr("action")
+                       // var rem = $("#RememberMe").is(":checked");
+                       // alert(rem);
+                        $.post(url,
+                            {
+                            'UserName': $("#UserName").val(),
+                            'Password': $("#Password").val(),
+                            'RememberMe': $("#RememberMe").is(":checked")
+                            }
+                            , function (data) {
+                            var temp = data.split(",");
+                            if (temp[0] == "success") 
+                            {
+                                if (temp[1] != "") 
+                                {                                   
+                                    window.location = "/Admin/"+temp[1];
+                                } 
+                                else 
+                                {
+                                    window.location = "/Admin/Login";
+                                }
+                            //if ((data.msg) == "success") {
+                                //$("#error_msg_form").html("<p>Your Query is succesfully registerd . Our team will contact you in few minutes. Thank You....</p>");
+                                //$("#error_msg_form").show();
+                                //$("#UserName").val('');
+                                //$("#Password").val('');
+                               
+                            }
+                            else {
+                                $("#error_msg_form").html("<p style=\"color:red;\">Invalid Username or Password . Please Provide Valid Credential.</p>");
+                                $("#error_msg_form").show();
+                            }
+                        });
+                    }
+
+                });
+            });
+
+            
+     //   });
+    </script>
+
+</body>
+</html>

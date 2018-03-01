@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Servizee | Admin</title>
+    <link rel="icon" type="image/png" href="@Url.Content("~/Content/images/favicon.png")" />
+    <link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/style.css")" type="text/css" />
+    <link href="@Url.Content("~/Content/css/font-awesome.min.css")" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="@Url.Content("~/Scripts/js/jquery.min.js")"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="@Url.Content("~/Scripts/js/bootstrap.min.js")"></script>
+
+     <script src="../../Content/PopUp/scripting.min.js" type="text/javascript"></script>
+    <script src="../../Content/PopUp/jquery.bpopup-0.9.4.min.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    @*<script type="text/javascript">
+        $(document).ready(function () {
+            $.post('@Url.Action("GetCategories", "Admin")', {},
+                    function (fooList) {
+                        $('#lstCategories').empty();
+                        $.each(fooList, function (i, foo) {
+                            //$('#MonthYear').append($("<option />").val(this.Value).text(this.Value));
+                            $('#lstCategories').append('<option value="' + this.Value + '">' + this.Text + '</option');
+                        });
+                    });
+        });
+    </script>*@
+
+    <header class="header">
+        <div class="container">
+            <div class="row nav-row">
+                <div class="col-md-2">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target="#myNavbar"> <span class="fa fa-bars"></span> </button>
+                        <a class="navbar-brand logo" href="#"><img src="@Url.Content("~/Content/images/logo.png")" /></a>
+                    </div>
+                </div>
+                <div class="col-md-10 menus-div">
+                    <nav class="collapse navbar-collapse nav-custom" id="myNavbar" role="navigation">
+                        <ul class="nav navbar-nav navbar-left menu">
+                            <li><a href="/Admin/SUPADMIN">Home</a></li>
+                            <li><a href="/Admin/ManageServices">Services</a></li>
+                            <li><a href="/Admin/ManageCategories">Categories</a></li>
+                            <li><a href="/Admin/ManageServiceOrder">Orders</a></li>
+                            <li><a href="/Admin/ManageCustomer">Customer</a></li>
+                            <li><a href="/Admin/ManageProvider">Service Provider</a></li>
+                            <li><a href="/Admin/ChangePassword">Change Password</a></li>
+                        </ul>
+                        <div class="pull-right user_header">
+                            @*<a href="/Admin/Logout">*@
+                                <div class="user-name"><i class="fa fa-cog" id="logouticon" style="color:#A1CC3A;" ></i>&nbsp;<span class="header_user_name" style="color:#A1CC3A;">Hi @HttpContext.Current.Session["User"].ToString()</span>
+                                <div id="logoutbox">                                    
+                                  <a href="/Admin/Logout" type="button">Logout</a> <br />                                                         
+                                  @*<a href="#" type="button" style="color: #172b42; padding-top:20px;">Change Password</a>*@ 
+                                </div>
+                                </div>
+                                @*<div class="header-usrmail"><i class="fa fa-cog"></i><span class="header_email">john@realestate.com.au</span> </div>*@
+                            @*</a>*@
+                        </div>                      
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+
+     <div id="popup" class="mainPopBg" style="display: none;">
+        @*<span class="button b-close" id="btnclosepopup"><span id="spnclosepopup">X</span></span>*@
+        <div id="msg" style="padding-top: 5px;">
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="col-sm-12">
+            <div class="col-md-6">
+                <p style="text-align:left !Important">
+                    Servizee.com © 2016 All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p style="text-align:right !Important; font-size:12px">
+                    Powered by: <a href="http://www.cruzata.com" target="_blank" style="color:#fff !Important">Cruzata Technologies</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+  
+    <script type="text/javascript">
+       
+
+        $(document).ready(function () {
+            var count = 0;
+            $('#logouticon').click(function (event) {
+                event.preventDefault();
+                count++;             
+                if (count == 1) {                
+                    $("#logoutbox").css({ "display": "block" });                  
+                }
+                if (count == 2) {                 
+                    $("#logoutbox").css({ "display": "none" });
+                    count = 0;
+                }
+            });           
+        });      
+    </script> 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.post('@Url.Action("ServicesLookup", "Home")', {},
+                    function (fooList) {
+                        $('#lstServices').empty();
+                        $.each(fooList, function (i, foo) {
+                            //$('#MonthYear').append($("<option />").val(this.Value).text(this.Value));
+                            $('#lstServices').append('<option value="' + this.Value + '">' + this.Text + '</option');
+                        });
+                    });
+        });
+    </script>
+</body>
+</html>

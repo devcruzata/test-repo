@@ -1,0 +1,223 @@
+﻿@model Project.Web.Models.ServiceModel
+@{
+    Layout = "~/Views/Shared/_LayoutPage_Admin.cshtml";
+
+    ViewBag.Title = "Online Kaarigar | Admin-Page";
+}
+<link href="~/Content/css/jasny-bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/js/jasny-bootstrap.min.js"></script>
+
+
+<div class="row" style="margin-bottom:162px;padding-top:50px;">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="margin-top:100px;">
+        <div class="panel panel-default panel-custom">
+            <div class="modal-body" style="border:1px thin gray">
+                <form action="/Admin/AddNewService" method="post" id="frm_data" enctype="multipart/form-data" onsubmit="return ValidationEvent()">
+                    <div class="form-group col-sm-6">
+                        <input type="text" class="form-control input-custom" placeholder="Service Name" id="Name" name="Name">
+                        <div id="error_msg_name" style="display:none;">
+                            <p style="color: red;">Please Enter Service Name</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        @*<select id="lstCategories" class="form-control input-custom" name="Category_ID_FK"></select>*@
+                        @Html.DropDownListFor(m => m.Category_ID_FK, (List<SelectListItem>)ViewBag.category_List, new { @class = "form-control input-custom", id = "lstCategories" })
+
+                        <div id="error_msg_category" style="display:none;">
+                            <p style="color: red;">Please Choose A Category</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea class="form-control input-custom" placeholder="Description.." id="Description" name="Description"></textarea>
+                        <div id="error_msg_description" style="display:none;">
+                            <p style="color: red;">Description should not be greater than 199 characters</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        @*<select id="baseFare" class="form-control input-custom" name="Basefare_ID_Auto_PK"></select>*@
+                        @Html.DropDownListFor(m => m.Basefare_ID_Auto_PK, (List<SelectListItem>)ViewBag.BaseFare_List, new { @class = "form-control input-custom", id = "baseFare" })
+                        <div id="error_msg_category" style="display:none;">
+                            <p style="color: red;">Please Choose A BaseFare</p>
+                        </div>
+                    </div>              
+                    <div class="form-group col-sm-12">
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                <img data-src="holder.js/100%x100%" alt="...">
+                            </div>
+                            <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                            <div>
+                                <span class="btn btn-default btn-file btn-add-service-form"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="UploadedImages" id="UploadedImages"></span>
+                                <a href="#" class="btn btn-default fileinput-exists btn-add-service-form" data-dismiss="fileinput">Remove</a>
+                            </div>
+                        </div>
+                        <div id="error_msg_file" style="display:none;">
+                            <p style="color: red;">Images shold be of .jpg or .jpeg or .png format</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:14px;">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-default btn-add-service-form" id="sb_btn">
+                                SUBMIT
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-default btn-add-service-form" id="rst_btn">
+                                Reset
+                            </button>
+                        </div>
+                        <div class="col-md-3">                           
+                        </div>
+                        <div id="error_msg_form" class="text-center" style="display:none;">
+                            <p style="color: red;">Please Fill The Form</p>                           
+                        </div>
+                        <div id="error_msg_formPost" class="text-center">
+                            <p style="color: red;">@TempData["ErrorMessage"]</p> 
+                            <input type="hidden" id="returnType" value="@TempData["ReturnType"]" />                           
+                        </div>
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+
+@*<script type="text/ecmascript">
+    $(document).ready(function () {
+        $.post('@Url.Action("GetCategories", "Admin")', {},
+                 function (fooList) {
+                     $('#lstCategories').empty();
+                     $.each(fooList, function (i, foo) {
+                         //$('#MonthYear').append($("<option />").val(this.Value).text(this.Value));
+                         $('#lstCategories').append('<option value="' + this.Value + '">' + this.Text + '</option');
+                     });
+                 });
+     });
+</script>*@
+
+
+@*<script type="text/javascript">
+    $(document).ready(function () {
+        $.post('@Url.Action("GetBaseFare", "Admin")', {},
+                 function (fooList) {                     
+                     $.each(fooList, function (i, foo) {
+                         //$('#MonthYear').append($("<option />").val(this.Value).text(this.Value));
+                         $('#baseFare').append('<option value="' + this.Value + '">' + this.Text + '</option');
+                     });
+                 });
+     });
+</script>*@
+
+
+<script type="text/javascript">
+
+    $('#rst_btn').click(function (event) {
+        event.preventDefault();
+        $('#Name').val('');
+        $('#Description').val(''); 
+        $('#UploadedImages').val('');
+
+    });
+
+    $('#Name').focusout(function (event) {
+        event.preventDefault();
+        var name = $("#Name").val();
+
+        if (name.trim() != "") {
+            $("#error_msg_name").hide();
+            return false;
+        }
+        if (name.trim() == "") {
+            $("#error_msg_name").show();
+            return true;
+        }
+    });
+
+
+    $('#lstCategories').focusout(function (event) {
+        event.preventDefault();
+        var cat = $("#lstCategories").val();
+
+        if (cat.trim() != "") {
+            $("#error_msg_category").hide();
+            return false;
+        }
+        if (cat.trim() == "") {
+            $("#error_msg_category").show();
+            return true;
+        }
+    });
+
+    $('#UploadedImages').change(function (event) {
+        event.preventDefault();
+        var arr = $('#UploadedImages').val().split('.');
+        var imgext = arr[1];
+
+        if (imgext == 'jpg' || imgext == 'png' || imgext == 'jpeg' || $('#UploadedImages').val() == '') {
+            $("#error_msg_file").hide();
+        }
+        else {
+            $("#error_msg_file").show();
+            return false;
+        }
+    });
+
+    function ValidationEvent() {
+        var name = $('#Name').val();
+        var cat = $('#lstCategories').val();
+        var arr = $('#UploadedImages').val().split('.');
+        var imgext = arr[1];
+        if (name != '') {
+            if (cat != '0') {
+                //return true;             
+
+                if (imgext == 'jpg' || imgext == 'png' || imgext == 'jpeg' || $('#UploadedImages').val() == '') {
+                    //return true;
+                }
+                else {                   
+                    $("#error_msg_file").show();
+                    return false;
+                }
+            }
+            else {
+                $("#error_msg_category").show();
+                return false;
+            }
+        }
+        else {
+            $("#error_msg_name").show();
+            return false;
+        }
+    }   
+</script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var returntyp = $("#returnType").val();
+        
+        if (returntyp == "AffteAdd")
+        {
+            
+            var headingName = '<div class="text-center"><p style="color:#A1CC3A; font-size:19px;margin-top: 50px;"><input type="button" class="btn btn-default text-center pop_btn_ok "  value="Add Questionnare" onclick="addQuestionnare();" /> <input type="button" class="btn btn-default text-center pop_btn_ok b-close"  id="btnclosepopup" value="Cancel" /></div>';
+            $("#msg").html(headingName);
+            $("#popup").css({ "height": "170px", "width": "350px", "background": "white", "margin-top": "30px;" });
+            $("#msg").css({ "padding-top": "0px" });
+            $('#popup').bPopup({
+                modalClose: false,
+                opacity: 0.6,
+                positionStyle: 'fixed',
+            });
+        }
+    });
+
+    function addQuestionnare() {
+        window.location = "/Admin/AddQuestionnare?Service_Auto_ID_Pk=@TempData["Service_Id_Pk"]";
+     }
+</script>

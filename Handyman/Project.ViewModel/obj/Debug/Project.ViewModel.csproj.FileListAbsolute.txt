@@ -1,0 +1,4 @@
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.ViewModel\bin\Debug\Project.ViewModel.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.ViewModel\bin\Debug\Project.ViewModel.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.ViewModel\obj\Debug\Project.ViewModel.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.ViewModel\obj\Debug\Project.ViewModel.pdb

@@ -1,0 +1,4 @@
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Entity\bin\Debug\Project.Entity.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Entity\bin\Debug\Project.Entity.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Entity\obj\Debug\Project.Entity.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Entity\obj\Debug\Project.Entity.pdb

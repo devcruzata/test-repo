@@ -1,0 +1,228 @@
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Project.Web.dll.config
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Project.Web.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Project.Web.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Antlr3.Runtime.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\BAL.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\EntityFramework.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\EntityFramework.SqlServer.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.Facebook.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.Google.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.Twitter.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Newtonsoft.Json.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Owin.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Project.Entity.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Project.ViewModel.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.Helpers.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.Mvc.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.Optimization.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.Razor.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.WebPages.Deployment.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.WebPages.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.WebPages.Razor.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Utility.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\WebGrease.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\DAL.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.Unity.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.Unity.Interception.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\BAL.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Project.Entity.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Project.ViewModel.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Utility.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.Helpers.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.Mvc.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.Optimization.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.Razor.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.WebPages.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.WebPages.Deployment.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\System.Web.WebPages.Razor.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Newtonsoft.Json.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Antlr3.Runtime.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\EntityFramework.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\EntityFramework.SqlServer.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.Facebook.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.Google.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.Twitter.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\DAL.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.Unity.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\bin\Microsoft.Practices.Unity.Interception.xml
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\obj\Debug\Project.Web.csprojResolveAssemblyReference.cache
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\obj\Debug\Project.Web.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Web\obj\Debug\Project.Web.pdb
+J:\Handyman\Project.Web\bin\Project.Web.dll.config
+J:\Handyman\Project.Web\bin\Project.Web.dll
+J:\Handyman\Project.Web\bin\Project.Web.pdb
+J:\Handyman\Project.Web\bin\Antlr3.Runtime.dll
+J:\Handyman\Project.Web\bin\BAL.dll
+J:\Handyman\Project.Web\bin\EntityFramework.dll
+J:\Handyman\Project.Web\bin\EntityFramework.SqlServer.dll
+J:\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Core.dll
+J:\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+J:\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.Cookies.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.Facebook.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.Google.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.OAuth.dll
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.Twitter.dll
+J:\Handyman\Project.Web\bin\Microsoft.Web.Infrastructure.dll
+J:\Handyman\Project.Web\bin\Newtonsoft.Json.dll
+J:\Handyman\Project.Web\bin\Owin.dll
+J:\Handyman\Project.Web\bin\Project.Entity.dll
+J:\Handyman\Project.Web\bin\Project.ViewModel.dll
+J:\Handyman\Project.Web\bin\System.Web.Helpers.dll
+J:\Handyman\Project.Web\bin\System.Web.Mvc.dll
+J:\Handyman\Project.Web\bin\System.Web.Optimization.dll
+J:\Handyman\Project.Web\bin\System.Web.Razor.dll
+J:\Handyman\Project.Web\bin\System.Web.WebPages.Deployment.dll
+J:\Handyman\Project.Web\bin\System.Web.WebPages.dll
+J:\Handyman\Project.Web\bin\System.Web.WebPages.Razor.dll
+J:\Handyman\Project.Web\bin\Utility.dll
+J:\Handyman\Project.Web\bin\WebGrease.dll
+J:\Handyman\Project.Web\bin\DAL.dll
+J:\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+J:\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+J:\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.dll
+J:\Handyman\Project.Web\bin\Microsoft.Practices.Unity.dll
+J:\Handyman\Project.Web\bin\Microsoft.Practices.Unity.Interception.dll
+J:\Handyman\Project.Web\bin\BAL.pdb
+J:\Handyman\Project.Web\bin\Project.Entity.pdb
+J:\Handyman\Project.Web\bin\Project.ViewModel.pdb
+J:\Handyman\Project.Web\bin\Utility.pdb
+J:\Handyman\Project.Web\bin\System.Web.Helpers.xml
+J:\Handyman\Project.Web\bin\System.Web.Mvc.xml
+J:\Handyman\Project.Web\bin\System.Web.Optimization.xml
+J:\Handyman\Project.Web\bin\System.Web.Razor.xml
+J:\Handyman\Project.Web\bin\System.Web.WebPages.xml
+J:\Handyman\Project.Web\bin\System.Web.WebPages.Deployment.xml
+J:\Handyman\Project.Web\bin\System.Web.WebPages.Razor.xml
+J:\Handyman\Project.Web\bin\Newtonsoft.Json.xml
+J:\Handyman\Project.Web\bin\Antlr3.Runtime.pdb
+J:\Handyman\Project.Web\bin\EntityFramework.xml
+J:\Handyman\Project.Web\bin\EntityFramework.SqlServer.xml
+J:\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Core.xml
+J:\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+J:\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.Facebook.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.Cookies.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.OAuth.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.Google.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.Twitter.xml
+J:\Handyman\Project.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+J:\Handyman\Project.Web\bin\DAL.pdb
+J:\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+J:\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+J:\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+J:\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.xml
+J:\Handyman\Project.Web\bin\Microsoft.Practices.Unity.xml
+J:\Handyman\Project.Web\bin\Microsoft.Practices.Unity.Interception.xml
+J:\Handyman\Project.Web\obj\Debug\Project.Web.csprojResolveAssemblyReference.cache
+J:\Handyman\Project.Web\obj\Debug\Project.Web.dll
+J:\Handyman\Project.Web\obj\Debug\Project.Web.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Project.Web.dll.config
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Project.Web.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Project.Web.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Antlr3.Runtime.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\BAL.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\EntityFramework.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\EntityFramework.SqlServer.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.Facebook.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.Google.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.Twitter.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Newtonsoft.Json.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Owin.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Project.Entity.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Project.ViewModel.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.Helpers.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.Mvc.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.Optimization.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.Razor.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.WebPages.Deployment.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.WebPages.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.WebPages.Razor.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Utility.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\WebGrease.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\DAL.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.Unity.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.Unity.Interception.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\BAL.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Project.Entity.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Project.ViewModel.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Utility.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.Helpers.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.Mvc.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.Optimization.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.Razor.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.WebPages.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.WebPages.Deployment.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\System.Web.WebPages.Razor.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Newtonsoft.Json.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Antlr3.Runtime.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\EntityFramework.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\EntityFramework.SqlServer.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.Facebook.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.Google.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.Twitter.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\DAL.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.ServiceLocation.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.Unity.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\bin\Microsoft.Practices.Unity.Interception.xml
+E:\WorkSpace Cruzata\Handyman\Project.Web\obj\Debug\Project.Web.csprojResolveAssemblyReference.cache
+E:\WorkSpace Cruzata\Handyman\Project.Web\obj\Debug\Project.Web.dll
+E:\WorkSpace Cruzata\Handyman\Project.Web\obj\Debug\Project.Web.pdb

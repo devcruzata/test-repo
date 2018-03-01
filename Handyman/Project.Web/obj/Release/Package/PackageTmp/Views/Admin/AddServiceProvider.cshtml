@@ -1,0 +1,226 @@
+﻿@model Project.Web.Models.UserModel
+@{
+    Layout = "~/Views/Shared/_LayoutPage_Admin.cshtml";
+
+    ViewBag.Title = "Servizee | Admin-Page";
+}
+
+
+<div class="row" style="margin-bottom:162px;padding-top:50px;">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="margin-top:100px;">
+        <div class="panel panel-default panel-custom">
+            <div class="modal-body" style="border:1px thin gray">
+                <form action="/Admin/AddNewServiceProvider" method="post" id="frm_data" enctype="multipart/form-data" onsubmit="return ValidateForm();">
+                    <div class="form-group col-sm-12">
+                        <input type="text" class="form-control input-custom" placeholder="Your First Name" id="User_FirstName" name="User_FirstName" >
+                        <div id="error_msg_User_FirstName" style="display:none;">
+                            <p style="color: red;">Please Enter Your First Name</p>
+                        </div>
+                    </div>
+                     <div class="form-group col-sm-12">
+                        <input type="text" class="form-control input-custom" placeholder="Your Last Name" id="User_LastName" name="User_LastName" >
+                         <div id="error_msg_User_LastName" style="display:none;">
+                             <p style="color: red;">Please Enter Your Last Name</p>
+                         </div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="text" class="form-control input-custom" placeholder="Email" id="User_Email" name="User_Email" >
+                        <div id="error_msg_User_Email" style="display:none;">
+                            <p style="color: red;">Please Enter Valid Email</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="password" class="form-control input-custom" placeholder="Password" id="User_Password" name="User_Password" >
+                        <div id="error_msg_User_Password" style="display:none;">
+                            <p style="color: red;">Please Enter Password</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="text" class="form-control input-custom" placeholder="Contact Number" id="User_Contact1" name="User_Contact1" onkeypress="return isNumberKey(event)">
+                        <div id="error_msg_User_Contact1" style="display:none;">
+                            <p style="color: red;"> Contact Number Should be 10 characters</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="text" class="form-control input-custom" placeholder="Address" id="User_BuildingName" name="User_BuildingName" >
+                        <div id="error_msg_address" style="display:none;">
+                            <p style="color: red;">Please Enter Valid Address</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="text" class="form-control input-custom" placeholder="Landmark" id="User_LandMark" name="User_LandMark" >
+                        <div id="error_msg_address" style="display:none;">
+                            <p style="color: red;">Please Enter Valid Address</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="text" class="form-control input-custom" placeholder="City" id="User_City" name="User_City" >
+                        <div id="error_msg_User_City" style="display:none;">
+                            <p style="color: red;">Please Enter Valid City Name</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="text" class="form-control input-custom" placeholder="Pincode" id="User_PinCode" name="User_PinCode" onkeypress="return isNumberKey(event)">
+                        <div id="error_msg_city" style="display:none;">
+                            <p style="color: red;">Please Enter Valid Pincode</p>
+                        </div>
+                    </div>                    
+                    <div class="form-group col-sm-12">
+                        <select id="lstServices" class="form-control input-custom" name="Service_Id"></select>
+                       @* <input type="text" class="form-control input-custom" placeholder="Service" id="Service_Id" name="Service_Id" >*@
+                            <div id="error_msg_Service_Id" style="display:none;">
+                                <p style="color: red;">Please Choose A service</p>
+                            </div>
+                    </div>                     
+                    <div class="form-group col-sm-12">
+                        <textarea class="form-control input-custom" placeholder="Description.." id="Service_Description" name="Service_Description"></textarea>
+                        <div id="error_msg_comments" style="display:none;">
+                            <p style="color: red;">Comments should not be greater than 999 characters</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:14px;">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-default btn-add-service-form" id="sb_btn">
+                                SUBMIT
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-default btn-add-service-form" id="rst_btn" onclick="rst();">
+                                Reset
+                            </button>
+                        </div>
+                        <div class="col-md-3">                           
+                        </div>
+                        <div id="error_msg_form" class="text-center" style="display:none;">
+                            <p style="color: red;">Please Fill The Form</p>                           
+                        </div>
+                        <div id="error_msg_formPost" class="text-center">
+                            <p style="color: red;">@ViewBag.Error_Msg</p> 
+                            <input type="hidden" id="returnType" value="@TempData["ReturnType"]" />                           
+                        </div>
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+
+<script type="text/javascript">
+
+    function ValidateForm() {
+        var emailRegex = /^[A-Za-z0-9._]*\@@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+        var email = $("#User_Email").val();
+
+        if ($("#User_FirstName").val().trim() == "") {            
+            $("#error_msg_User_FirstName").show();
+            return false;
+        }
+        else if ($("#User_LastName").val().trim() == "") {
+            $("#error_msg_User_LastName").show();
+            $("#error_msg_User_FirstName").hide();
+            return false;
+        }
+        else if ($("#User_Email").val().trim() == "") {
+            $("#error_msg_User_Email").show();
+            $("#error_msg_User_LastName").hide();
+            $("#error_msg_User_FirstName").hide();
+            return false;
+        }
+        else if ($("#User_Password").val().trim() == "") {
+            $("#error_msg_User_Password").show();
+            $("#error_msg_User_Email").hide();
+            $("#error_msg_User_LastName").hide();
+            $("#error_msg_User_FirstName").hide();
+            return false;
+        }
+        else if ($("#User_Contact1").val().trim() == "") {
+            $("#error_msg_User_Contact1").show();
+            $("#error_msg_User_Password").hide();
+            $("#error_msg_User_Email").hide();
+            $("#error_msg_User_LastName").hide();
+            $("#error_msg_User_FirstName").hide();
+            return false;
+        }
+        else if ($("#User_City").val().trim() == "") {
+            $("#error_msg_User_City").show();
+            $("#error_msg_User_Contact1").hide();
+            $("#error_msg_User_Password").hide();
+            $("#error_msg_User_Email").hide();
+            $("#error_msg_User_LastName").hide();
+            $("#error_msg_User_FirstName").hide();
+            return false;
+        }
+        else if ($("#lstServices").val().trim() == "0") {
+            $("#error_msg_Service_Id").show();
+            $("#error_msg_User_City").hide();
+            $("#error_msg_User_Contact1").hide();
+            $("#error_msg_User_Password").hide();
+            $("#error_msg_User_Email").hide();
+            $("#error_msg_User_LastName").hide();
+            $("#error_msg_User_FirstName").hide();
+            return false;
+        }
+        else if (!emailRegex.test(email)) {
+            $("#error_msg_User_Email").show();
+            $("#error_msg_Service_Id").hide();
+            $("#error_msg_User_City").hide();
+            $("#error_msg_User_Contact1").hide();
+            $("#error_msg_User_Password").hide();            
+            $("#error_msg_User_LastName").hide();
+            $("#error_msg_User_FirstName").hide();
+            return false;
+        }
+        else if ($("#User_Contact1").val().trim().length > 10 || $("#User_Contact1").val().trim().length < 10) {
+            $("#error_msg_User_Contact1").show();
+            $("#error_msg_Service_Id").hide();
+            $("#error_msg_User_City").hide();            
+            $("#error_msg_User_Password").hide();
+            $("#error_msg_User_Email").hide();
+            $("#error_msg_User_LastName").hide();
+            $("#error_msg_User_FirstName").hide();
+            return false;
+        }
+        else {
+            $("#error_msg_User_Contact1").hide();
+            $("#error_msg_Service_Id").hide();
+            $("#error_msg_User_City").hide();
+            $("#error_msg_User_Password").hide();
+            $("#error_msg_User_Email").hide();
+            $("#error_msg_User_LastName").hide();
+            $("#error_msg_User_FirstName").hide();
+            return true;
+        }
+    }
+
+    function rst() {
+        location.reload();
+    }
+</script>
+
+<script>
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 45 || charCode > 57 || charCode == 47 || charCode == 46))
+            return false;
+
+        return true;
+    }
+
+    function zipCheck(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+
+</script>

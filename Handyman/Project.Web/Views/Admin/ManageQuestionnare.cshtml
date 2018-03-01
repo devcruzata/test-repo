@@ -1,0 +1,206 @@
+﻿@model Project.Web.Models.ServiceQuestionnareModel
+@{
+    Layout = "~/Views/Shared/_LayoutPage_Admin.cshtml";
+
+    ViewBag.Title = "Online Kaarigar | Admin-Page";
+}
+
+<script type="text/javascript" src="~/Scripts/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.tablesorter.pager.js"></script>
+<script src="~/Scripts/js/imgLiquid-min.js"></script>
+
+
+
+<div class="container-fluid contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12 about-contant" style="padding-bottom:167px;">
+                    <div class="panel panel-default panel-custom" style="margin-top:100px;">
+                        <div class="table-headerdiv col-sm-12">
+                            <div class="table-header panel-heading col-sm-12 pd-left pd-right">
+                                <div class="col-md-4">
+                                    <input type="text" placeholder="search..." class="form-control search-input search input-search" id="search">
+                                </div>
+                                <div class="col-md-8">
+                                    <button class="btn btn-default btn-newservice" onclick="AddQuestionnare('@ViewBag.Service_id')">Add New Questionnare</button>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body table-mainbody">
+                            <div class="col-sm-12 pd">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover table-custom table-sorter" id="data_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">S.No.</th>                                                
+                                                <th class="text-center">Question</th>
+                                                <th class="text-center">Answer Type</th>                                                                                        
+                                                <th class="text-center">Opereations</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @{
+                                                 int i=0;
+                                                 if (Model.questions_List.Count > 0)
+                                                 {
+                                                        
+                                                   
+                                                    foreach (var question in Model.questions_List)
+                                                    {
+                                                       i++;
+                                                       <tr>
+
+                                                           <td class="text-center">@i</td>
+                                                           <td class="text-center">@question.Question</td>
+                                                           <td class="text-center">@question.AnswerType</td>                                               
+                                                           <td class="text-center">
+                                                                <img src="../Content/images/edit_icon.png" onclick="QuestionnareDetails('@ViewBag.Service_id','@question.Questionnare_ID_Auto_PK')" title="Edit Question" />&nbsp;&nbsp;
+                                                                <img src="../Content/images/trash_icon.png" onclick="DeleteQuestionnare('@question.Questionnare_ID_Auto_PK','@ViewBag.Service_id')" title="Delete Question" />&nbsp;&nbsp;
+
+                                                           </td>
+                                                        </tr>
+
+                                                   }
+                                                 }
+                                           }
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="10" class="text-right">
+                                                    <div class="pagination-custom paginate pager " id="pager">
+                                                        <a href="#" class="first" id="first">first</a> | <a href="#" class="prev" id="prev">previous</a>
+
+                                                        <a href="#" class="next" id="next">next</a> | <a href="#" class="last" id="last">last</a>
+                                                        
+                                                    </div>
+                                                    <div class="text-left" id="erroe_msg_tbl" style="display:none;">
+                                                        <p style="color:red;">error</p>
+                                                    </div>
+                                                </td>                                       
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">  
+
+    function ManageActiveInactive(Service_ID_Auto_PK) {
+       
+        var divId = "div-" + Service_ID_Auto_PK;
+        
+        var Qdata = Service_ID_Auto_PK;
+        var url = "/Common/ManageStatus";
+        $.post(url, { tbl_id_auto_pk: Qdata ,tbl_tbl_name:"service" }, function (data) {
+            if (data == "1") {
+                $("#div-" + Service_ID_Auto_PK).attr("status", "Inactivate");
+                $("#" + divId).removeClass("inactiveStatus");
+                $("#" + divId).addClass("activeStatus");
+               
+            }
+            if (data == "0") {
+                $("#div-" + Service_ID_Auto_PK).attr("status", "Activate");
+                $("#" + divId).removeClass("activeStatus");
+                $("#" + divId).addClass("inactiveStatus");
+               
+            }
+        });
+        
+    }
+
+
+    function ManageServiceType(Service_ID_Auto_PK) {
+
+        
+        var divId = "div-" + Service_ID_Auto_PK;
+
+        var Qdata = Service_ID_Auto_PK;
+        var url = "/Common/ManageServiceType";
+        $.post(url, { tbl_id_auto_pk: Qdata, tbl_tbl_name: "service" }, function (data) {
+            if (data == "1") {
+                $("#div-" + Service_ID_Auto_PK).attr('checked', true);
+                $("#div-" + Service_ID_Auto_PK).prop('title', 'Hot Services');
+            }
+            if (data == "0") {
+                $("#div-" + Service_ID_Auto_PK).attr('checked', false);
+                $("#div-" + Service_ID_Auto_PK).attr('title', 'Normal Services');
+            }
+        });
+
+    }
+
+
+    function EditService(Service_ID_Auto_PK) {
+        window.location = "/Admin/UpdateService?Service_ID=" + Service_ID_Auto_PK + "&isPostBack=false";
+    }
+
+    function DeleteQuestionnare(Questionnare_Id_Pk , Service_id_Pk) {
+
+         var result = confirm("Are you sure to delete this question ?");
+         if (result == true)
+         {          
+           var url = "/Admin/DeleteQuestion";
+           $.post(url, { Questionnare_Id: Questionnare_Id_Pk, Service_id: Service_id_Pk }, function (data) {
+            if (data == "success") {
+                location.reload();
+            }
+            if (data != "success") {       
+                $("#error_msg_tbl").html("<p style=\"color:red;\">There is an error in processing your request. Please Try after some time.</p>");
+                $("#error_msg_tbl").show();
+            }
+        });
+       }
+    }
+
+    $(document).ready(function () {
+        $("table")
+		.tablesorter({ widthFixed: true })
+		.tablesorterPager({ container: $("#pager"), size: 100 });
+    });
+    $(document).ready(function () {
+        $('#search').keyup(function (event) {
+            //if esc is pressed or nothing is entered
+
+            if (event.keyCode == 27 || $(this).val() == '') {
+                //if esc is pressed we want to clear the value of search box
+                $(this).val('');
+                //than calling initial stage of table
+                location.reload();
+            }
+                //if there is text, than start searching
+            else {
+                filter('tbody tr', $(this).val());
+            }
+        });
+
+        function filter(selector, query) {
+            query = $.trim(query); //trim white space
+            query = query.replace(/ /gi, '|'); //add OR for regex query
+
+            $(selector).each(function () {
+                ($(this).text().search(new RegExp(query, "i")) < 0) ? $(this).hide().removeClass('visible') : $(this).show().addClass('visible');
+            });
+        }
+    });
+
+    $(document).ready(function () {
+        $(".imgLiquid").imgLiquid();
+    });
+</script>
+
+<script type="text/javascript">
+    function QuestionnareDetails(Service_Id_PK, Questionnare_Id_Pk) {
+        window.location = "/Admin/QuestionnareDetails?Service_Id_Pk=" + Service_Id_PK + "&Questionnare_Id_Pk=" + Questionnare_Id_Pk;
+    }
+
+    function AddQuestionnare(Service_Auto_ID_Pk) {
+        window.location = "/Admin/AddQuestionnare?Service_Auto_ID_Pk=" + Service_Auto_ID_Pk;
+    }
+</script>

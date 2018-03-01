@@ -1,0 +1,17 @@
+﻿@model Project.ViewModel.ServicesListingViewModel
+@{
+    Layout = null;
+}
+<div class="col-md-4 col-sm-6 col-xs-12 work-space" id="Service_Name" name="@Model.Service_Name">
+    <a href="#" data-toggle="modal" data-target="#exampleModal">
+        <div class="service-img">
+            <img src="@Model.Service_ImageUrl" />
+        </div>
+        <div class="image-hover">
+            <i class="fa fa-pluse"></i>
+        </div>
+        <h3>
+            @Model.Service_Name
+        </h3>
+    </a>
+</div>

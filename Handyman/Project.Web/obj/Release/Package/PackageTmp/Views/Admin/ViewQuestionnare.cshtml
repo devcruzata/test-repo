@@ -1,0 +1,76 @@
+﻿@model Project.ViewModel.ServiceOrderListingViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutPage_Admin.cshtml";
+
+    ViewBag.Title = "Online Kaarigar | Admin-Page";
+}
+<link href="~/Content/css/jasny-bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/js/jasny-bootstrap.min.js"></script>
+
+
+<div class="row" style="padding-bottom:346px;padding-top:50px;">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="margin-top:100px;">
+        <div class="panel panel-default panel-custom">
+            <div class="modal-body" style="border:1px thin gray; margin-left:60px;">
+               
+
+                    @{
+                        if (ViewBag.msg == "success")
+                       {  
+                         int i=0;
+                        
+                         foreach (var ques in Model.question)
+                         {
+                            i++;
+                       
+                               <div class="form-group col-sm-12" id="questiondiv">
+                               <p><b>@i Ques. </b> @ques.Questions ?</p>
+                               </div>                    
+                            foreach (var ans in ques.answers)
+                            {
+                                 <div class="form-group col-sm-12">
+                                   <p><b>Ans. </b> @ans.Answers .</p>                                   
+                                 </div>
+                            }                        
+                        }
+                      }
+                       else
+                       {
+                           <p style="margin-left:130px;"><b>There is No Questionnare For This Order.</b></p>
+                       }
+                    }
+                    <div class="row" style="margin-bottom:14px;">                       
+                        <div class="col-md-4">                            
+                        </div>
+                        <div class="col-md-4" style="margin-left:0px;">                           
+                            <button type="submit" class="btn btn-default btn-add-service-form" id="cancel_btn" onclick="addMoreDataToQuestionnareReport();">
+                               Back
+                            </button>                           
+                        </div>
+                        <div class="col-md-4">                           
+                        </div>                      
+                    </div>
+               </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+    $("#cancel_btn").click(function () {
+        window.location = "/Admin/ManageServiceOrder"
+
+    });
+
+    
+</script>
+
+
+

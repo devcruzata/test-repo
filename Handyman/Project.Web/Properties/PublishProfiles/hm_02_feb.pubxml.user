@@ -1,0 +1,1009 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\devcr\Desktop\srz</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/01/2018 16:27:57</publishTime>
+    </File>
+    <File Include="bin/BAL.dll">
+      <publishTime>02/01/2018 18:13:17</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>02/01/2018 18:13:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/01/2018 16:28:00</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/01/2018 16:28:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>02/01/2018 16:28:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/01/2018 16:28:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/01/2018 16:28:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/01/2018 16:28:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>07/22/2015 00:54:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>07/22/2015 00:54:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>07/22/2015 00:54:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>07/22/2015 00:54:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Interception.dll">
+      <publishTime>07/22/2015 00:54:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/01/2018 16:27:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/01/2018 16:27:57</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>02/01/2018 16:28:05</publishTime>
+    </File>
+    <File Include="bin/Project.Entity.dll">
+      <publishTime>02/01/2018 18:13:17</publishTime>
+    </File>
+    <File Include="bin/Project.ViewModel.dll">
+      <publishTime>02/01/2018 18:13:17</publishTime>
+    </File>
+    <File Include="bin/Project.Web.dll">
+      <publishTime>02/02/2018 12:51:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/01/2018 16:27:55</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/01/2018 16:27:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/01/2018 16:27:55</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/01/2018 16:27:55</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/01/2018 16:27:55</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/01/2018 16:27:55</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/01/2018 16:27:55</publishTime>
+    </File>
+    <File Include="bin/Utility.dll">
+      <publishTime>02/01/2018 18:13:17</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>02/01/2018 16:27:58</publishTime>
+    </File>
+    <File Include="Content/category_img/Man Power114.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-checkbox.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-theme.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-theme.css.map">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-theme.min.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.css.map">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/font-awesome.min.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/jasny-bootstrap.min.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/font.css">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.eot">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.svg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.ttf">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/FontAwesome.otf">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/Helvetica.eot">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/Helvetica.svg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/Helvetica.ttf">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/Helvetica.woff">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/Helvetica.woff2">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/OpenSans-Light.ttf">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/OpenSans-Regular.ttf">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/SEGOEUIL.eot">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/SEGOEUIL.ttf">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/fonts/SEGOEUIL.woff">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/.picasa.ini">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/144x144.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/about_img.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/arrow.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/blue_sectionbg.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/carpenrty_img.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/carpentryy-slide-new.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/carpentryy.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/cleaning_img.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/construction-wallpaper-1080p-mz6.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/cross-icon.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/csscheckbox_img.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/E1.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/edit_icon.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/elecrtronics-slide-new.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/elecrtronics.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/electrical_img.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/employee.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/favicon.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/gplay.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/hap_cus1.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/hap_cus2.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/hap_cus3.jpg">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/less_icon.png">
+      <publishTime>02/01/2018 17:53:03</publishTime>
+    </File>
+    <File Include="Content/images/lg_bg.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/linkProperty1.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/logo - Copy.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/logo.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/more_icon.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/no.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/painting-slide-new.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/painting.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/painting_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/pestcontrol_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/plumbing-slide-new.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/plumbing.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/plumbing_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/plus.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/search_icon.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/slider1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/slider2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/slider3.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/slider4.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/slider_img/carpentryy-slide-new.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/slider_img/elecrtronics-slide-new.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/slider_img/painting-slide-new.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/slider_img/plumbing-slide-new.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/status_green.gif">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/status_red.gif">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/trash_icon.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/web-resized.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/web.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/images/yes.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/PopUp/jquery.bpopup-0.9.4.min.js">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/PopUp/jquery.min.js">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/PopUp/PopUpStyle.css">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/PopUp/scripting.min.js">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/ABC279.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/AC-REPAIR 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/AC-REPAIR.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Aluminium-Fabrication-7_0.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/alu_fab.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Car repair 1.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Car repair.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Car-Repair-Cost.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/carpenrty_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/carpenter.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/carpentry1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/carpentry2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Carpet-Cleaner.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/civil contractors 1.JPG">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/civil contractors 2.JPG">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/civil contractors.JPG">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/cleaning services 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/cleaning services 2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/cleaning services.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/cleaning_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/computer repair.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/computer services.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Cook Maid.jpeg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Cushions-Curtains215.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Delivery Services 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Delivery Services.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/drainage_workers 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/drainage_workers 2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/drainage_workers.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Drilling workers 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Drilling workers.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Driver service 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Driver_service.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/driver_service3.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/electrical-services %281%29.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/electrical-services 2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/electrical-services.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/electrical_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Fire Fighting service 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Fire Fighting service 2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Fire Fighting service.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Furniture workers 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Furniture_workers.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Gas Stove-Repair 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Gas Stove-Repair.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/general-pest-control.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Glass fitting.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Glass fitting.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Gyser-repair.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/image.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Interior Designers 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Interior Designers 2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Interior Designers 3.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Interior Designers.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Iron Fabricators 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Iron Fabricators.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Labour Service 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Labour Service 2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Labour_Service.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/laundry 2.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Laundry Services 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Laundry Services 2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/laundry.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/LaundryServices.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Man Power102.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Mechanic114.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/microwave-repair.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/movers_and_packers.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/NEW SERVICE199.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/packing-and-moving.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Painter %281%29.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/painter %282%29.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Painter 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Painter 2.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Painter.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/painting_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/pest control.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/pestcontrol_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/plumbing %281%29.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/plumbing-service.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/plumbing.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/plumbing_img.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/pluming 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/pqrst142.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/refrigerator-repair 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/refrigerator-repair.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/road construction 1.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/road construction.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Swimming Pool cleaner.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Test Service141.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/The-pest-control-experts.jpg">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Tiling service 1.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Tiling service.png">
+      <publishTime>02/01/2018 17:53:04</publishTime>
+    </File>
+    <File Include="Content/service_img/Wallpaper service 1.jpg">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/service_img/Wallpaper service.jpg">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/service_img/Water proofing.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/service_img/welding-service.jpg">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/service_img/welding-services-2.jpg">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/service_img/welding-services-3.jpg">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/service_img/xyz service52.jpg">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="Content/Uploads/customer_status_green.jpg">
+      <publishTime>02/01/2018 17:53:05</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/01/2018 16:27:35</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/01/2018 16:27:43</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/01/2018 16:27:43</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/01/2018 16:27:43</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/01/2018 16:27:43</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/01/2018 16:27:35</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/01/2018 16:28:06</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>02/01/2018 16:27:43</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>02/01/2018 16:27:43</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>02/01/2018 16:27:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>02/01/2018 16:27:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>02/01/2018 16:27:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.11.1.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.5.1.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.5.1.min.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.11.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.11.min.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.tablesorter.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.tablesorter.pager.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/js/bootstrap-filestyle.min.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/js/bootstrap.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/js/bootstrap.min.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/js/imgLiquid-min.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/js/jasny-bootstrap.min.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/js/jquery.min.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/js/npm.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/js/scripts.js">
+      <publishTime>02/01/2018 17:54:37</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftAjax.debug.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftAjax.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcAjax.debug.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcAjax.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcValidation.debug.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/MicrosoftMvcValidation.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-1.7.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-1.7.min.js">
+      <publishTime>02/01/2018 17:54:40</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>02/01/2018 16:27:56</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>02/01/2018 16:27:58</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>02/01/2018 16:27:58</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>02/01/2018 17:54:42</publishTime>
+    </File>
+    <File Include="Views/Admin/AddNewCategory.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/AddNewService.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/AddQuestionnare.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/AddServiceProvider.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/ChangePassword.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/Login.cshtml">
+      <publishTime>02/02/2018 12:39:56</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageCategories.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageCustomer.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageProvider.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageQuestionnare.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageServiceOrder.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageServices.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/QuestionnareDetails.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/SUPADMIN.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/UpdateCategory.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/UpdateService.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/UpdateServiceProvider.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Admin/ViewQuestionnare.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/FAQ.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/Policies.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/ServiceListAll.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/ServiceListHomePage.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/Services.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/Terms.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Home/_ServiceListHomePartial.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Shared/_HeaderPartial.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutPageSpecific.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutPage_Admin.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Shared/_LogOnPartial.cshtml">
+      <publishTime>02/01/2018 17:55:10</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/01/2018 16:27:35</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/01/2018 16:27:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/02/2018 12:38:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Entity\bin\Release\Project.Entity.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Entity\bin\Release\Project.Entity.pdb
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Entity\obj\Release\Project.Entity.dll
+E:\WorkSpace\Payroll & Attendence\Handyman\Project.Entity\obj\Release\Project.Entity.pdb

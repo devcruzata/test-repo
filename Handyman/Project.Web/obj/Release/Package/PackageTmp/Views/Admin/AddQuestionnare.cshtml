@@ -1,0 +1,448 @@
+﻿@model Project.Web.Models.ServiceModel
+@{
+    Layout = "~/Views/Shared/_LayoutPage_Admin.cshtml";
+
+    ViewBag.Title = "Online Kaarigar | Admin-Page";
+}
+<link href="~/Content/css/jasny-bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/js/jasny-bootstrap.min.js"></script>
+
+
+<div class="row" style="margin-bottom:202px;padding-top:50px;">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="margin-top:100px;">
+        <div class="panel panel-default panel-custom">
+            <div class="modal-body" style="border:1px thin gray">
+               @* <form action="/Admin/AddNewService" method="post" id="frm_data" enctype="multipart/form-data" >*@                 
+                    
+                    
+                    <div class="form-group col-sm-12"  id="questiondiv">
+                        <textarea class="form-control input-custom" placeholder="Question" id="Question" name="Question" style="padding-top:20px;"></textarea>
+                        <div id="error_msg_question" style="display:none; color:red;">
+                            <p>Please Enter A Question</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-12"  id="questionTypdiv">
+                        <select id="answerType" class="form-control input-custom" name="AnswerType">
+                            <option value="">Select Answer Type</option>
+                            <option value="check">Checkbox</option>
+                            <option value="radio">Radio Button</option>
+                            <option value="text">Text</option>
+                        </select>
+                        <div id="error_msg_answerType" style="display:none; color:red;">
+                            <p>Please Choose a Answer Type</p>
+                        </div>
+                    </div>
+
+                    <div id="objective" style="display:none;">
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer1" name="Answer1" placeholder="Answer 1" />
+                            <div id="error_msg_answer1" style="display:none; color:red;">
+                            <p>Answer1 Can't be empty</p>
+                        </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer2" name="Answer2" placeholder="Answer 2" />
+                            <div id="error_msg_answer2" style="display:none; color:red;">
+                               <p>Answer2 Can't be empty</p>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer3" name="Answer3" placeholder="Answer 3" />
+                            <div id="error_msg_answer3" style="display:none; color:red;">
+                            <p>Answer3 Can't be empty</p>
+                        </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer4" name="Answer4" placeholder="Answer 4" />
+                            <div id="error_msg_answer4" style="display:none; color:red;">
+                            <p>Answer4 Can't be empty</p>
+                        </div>
+                        </div>  
+                         <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer5" name="Answer5" placeholder="Answer 5" />
+                            <div id="error_msg_answer5" style="display:none; color:red;">
+                            <p>Answer5 Can't be empty</p>
+                            </div>
+                         </div>
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer6" name="Answer6" placeholder="Answer 6" />
+                            <div id="error_msg_answer6" style="display:none; color:red;">
+                            <p>Answer6 Can't be empty</p>
+                        </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer7" name="Answer7" placeholder="Answer 7" />
+                            <div id="error_msg_answer7" style="display:none; color:red;">
+                            <p>Answer7 Can't be empty</p>
+                        </div>
+                        </div>  
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer8" name="Answer8" placeholder="Answer 8" />
+                            <div id="error_msg_answer8" style="display:none; color:red;">
+                            <p>Answer8 Can't be empty</p>
+                        </div>
+                        </div> 
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer9" name="Answer9" placeholder="Answer 9" />
+                            <div id="error_msg_answer9" style="display:none; color:red;">
+                            <p>Answer9 Can't be empty</p>
+                        </div>
+                        </div> 
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control input-custom" id="answer10" name="Answer10" placeholder="Answer 10" />
+                            <div id="error_msg_answer10" style="display:none; color:red;">
+                            <p>Answer10 Can't be empty</p>
+                        </div>
+                        </div> 
+                       </div>              
+                   
+                     <div class="row" style="margin-bottom:14px;">
+                       @* <div class="col-md-3"></div>*@
+                        <div class="col-md-2">
+                            @*<button type="submit" class="btn btn-default btn-add-service-form" id="sb_btn">
+                                Add
+                            </button>*@
+                        </div>
+                         <div class="col-md-8">
+                             <button  class="btn btn-default btn-add-service-form" id="sb_btn" onclick="AddQuestionnare();">
+                                Add
+                            </button>
+                            <button  class="btn btn-default btn-add-service-form" id="sb_addmore_btn" onclick="AddMoreQuestionnare();">
+                                Add More
+                            </button>
+                             <button type="button" class="btn btn-default btn-add-service-form" id="rst_btn">
+                                Reset
+                            </button>
+                        </div>
+                        <div class="col-md-2">
+                            @*<button type="button" class="btn btn-default btn-add-service-form" id="rst_btn">
+                                Reset
+                            </button>*@
+                        </div>                        
+                        <div id="error_msg_form" class="text-center" style="display:none;">
+                            <p style="color: red;">There is an error in adding questionnare </p>
+                        </div>
+                        <div class="text-center" style="display:none;">
+                            <p style="color: red;">Please Fill Out Form Correctly</p>
+                            <input type="hidden" id="Service_id" value="@ViewBag.Service_Id_Pk"/>
+                            <input type="hidden" id="addMore_Service_id" value="@TempData["Service_Auto_ID_Pk"]" />
+                        </div>
+                    </div>
+                @*</form>*@
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div id="error_msg_page" class="text-center" style="display:none;">
+                            <p style="color: red;">Please Fill Out Form Correctly</p>                           
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+    $('#rst_btn').click(function (event) {
+        event.preventDefault();
+        var answertype = $('#answerType :selected').val();
+        $('#Question').val('');
+        if (answertype == "radio" || answertype == "check")
+        {
+            $('#answer1').val('');
+            $('#answer2').val('');
+            $('#answer3').val('');
+            $('#answer4').val('');
+            $('#answer5').val('');
+            $('#answer6').val('');
+            $('#answer7').val('');
+            $('#answer8').val('');
+            $('#answer9').val('');
+            $('#answer10').val('');
+        }
+        
+        
+
+    });
+
+    $('#Question').focusout(function (event) {
+        event.preventDefault();
+        var question = $("#Question").val();
+
+        if (question.trim() != "") {
+            $("#error_msg_question").hide();
+            return false;
+        }
+        if (question.trim() == "") {
+            $("#error_msg_question").show();
+            return true;
+        }
+    });
+
+
+    $('#answerType').focusout(function (event) {
+        event.preventDefault();
+        var answerType = $("#answerType").val();
+
+        if (answerType.trim() != "") {
+            $("#error_msg_answerType").hide();
+            return false;
+        }
+        if (answerType.trim() == "") {
+            $("#error_msg_answerType").show();
+            return true;
+        }
+    });
+
+    $('#answer1').focusout(function (event) {
+        event.preventDefault();
+        var ans1 = $("#answer1").val();
+        var answerType = $("#answerType").val();
+        if (answerType == "radio" || answerType == "check")
+        {
+        }
+        if (ans1.trim() != "") {
+            $("#error_msg_answer1").hide();
+        }
+        else {
+            $("#error_msg_answer1").show();
+            return false;
+        }
+    });
+
+    //$('#answer2').focusout(function (event) {
+    //    event.preventDefault();
+    //    var ans2 = $("#answer2").val();
+    //    var answerType = $("#answerType").val();
+    //    if (answerType == "radio" || answerType == "check") {
+    //    }
+    //    if (ans2.trim() != "") {
+    //        $("#error_msg_answer2").hide();
+    //    }
+    //    else {
+    //        $("#error_msg_answer2").show();
+    //        return false;
+    //    }
+    //});
+
+    //$('#answer3').focusout(function (event) {
+    //    event.preventDefault();
+    //    var ans3 = $("#answer3").val();
+    //    var answerType = $("#answerType").val();
+    //    if (answerType == "radio" || answerType == "check") {
+    //    }
+    //    if (ans3.trim() != "") {
+    //        $("#error_msg_answer3").hide();
+    //    }
+    //    else {
+    //        $("#error_msg_answer3").show();
+    //        return false;
+    //    }
+    //});
+
+    //$('#answer4').focusout(function (event) {
+    //    event.preventDefault();
+    //    var ans4 = $("#answer4").val();
+    //    var answerType = $("#answerType").val();
+    //    if (answerType == "radio" || answerType == "check") {
+    //    }
+    //    if (ans4.trim() != "") {
+    //        $("#error_msg_answer4").hide();
+    //    }
+    //    else {
+    //        $("#error_msg_answer4").show();
+    //        return false;
+    //    }
+    //});
+
+    
+</script>
+
+<script type="text/javascript">
+
+
+    function ValidationEvent() {
+        var ques = $('#Question').val();
+        var ansType = $('#answerType').val();
+        var ans1 = $('#answer1').val().trim();
+        var ans2 = $('#answer2').val().trim();
+        var ans3 = $('#answer3').val().trim();
+        var ans4 = $('#answer4').val().trim();
+        var ans5 = $('#answer5').val().trim();
+        var ans6 = $('#answer6').val().trim();
+        var ans7 = $('#answer7').val().trim();
+        var ans8 = $('#answer8').val().trim();
+        var ans9 = $('#answer9').val().trim();
+        var ans10 = $('#answer10').val().trim();
+
+
+        if (ques != "" && ansType != "")
+        {            
+            if ($('#answerType').val() == "check" || $('#answerType').val() == "radio")
+            {               
+                if (ans1 == "")
+                {                    
+                    $("#error_msg_page").show();
+                    return false;
+                }
+                else {
+                    $("#error_msg_page").hide();
+                    return true;
+                }
+            }
+
+            if ($('#answerType').val() == "text")
+            {                
+                $("#error_msg_page").hide();
+                return true;
+            }
+        }
+        else
+        {            
+            $("#error_msg_page").show();
+            return false;
+        }
+
+    }
+
+
+
+
+
+
+    $(document).ready(function () {
+
+        $("#answerType").change(function () {
+            var answertyp = $('#answerType :selected').val();
+            if (answertyp == "check" || answertyp == "radio") {
+                $("#objective").show();
+            }
+            else {
+                $("#objective").hide();
+            }
+
+            if (answertyp == "text") {
+                $("#txt").show();
+            }
+            else {
+                $("#txt").hide();
+            }
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+    function addDataToQuestionnareReport() {
+
+       
+            var answertype = $('#answerType :selected').val();
+           
+
+            $.post("/Admin/AddQuestionnare",
+                {
+                    'Service_Auto_ID_Pk': $("#Service_id").val(),
+                    'Question': $("#Question").val(),
+                    'AnswerType': $('#answerType :selected').val(),
+                    'answer1': $("#answer1").val(),
+                    'answer2': $("#answer2").val(),
+                    'answer3': $("#answer3").val(),
+                    'answer4': $("#answer4").val(),
+                    'answer5': $("#answer5").val(),
+                    'answer6': $("#answer6").val(),
+                    'answer7': $("#answer7").val(),
+                    'answer8': $("#answer8").val(),
+                    'answer9': $("#answer9").val(),
+                    'answer10': $("#answer10").val(),
+                    'addMoreFlag': '0'
+                },
+                function (data) {
+                    if (data != "") {
+                        $("#Service_id").val(data);
+                        //$('#Question').val('');
+                        //if (answertype == "radio" || answertype == "check") {
+                        //    $('#answer1').val('');
+                        //    $('#answer2').val('');
+                        //    $('#answer3').val('');
+                        //    $('#answer4').val('');
+                        //}
+                        window.location = "/Admin/ManageServices";
+                    }
+                    else {
+                        $("#error_msg_form").show();
+                    }
+                })
+        
+
+    }
+
+    function addMoreDataToQuestionnareReport() {
+        var answertype = $('#answerType :selected').val();
+
+
+        $.post("/Admin/AddQuestionnare",
+            {
+                'Service_Auto_ID_Pk': $("#Service_id").val(),
+                'Question': $("#Question").val(),
+                'AnswerType': $('#answerType :selected').val(),
+                'answer1': $("#answer1").val(),
+                'answer2': $("#answer2").val(),
+                'answer3': $("#answer3").val(),
+                'answer4': $("#answer4").val(),
+                'answer5': $("#answer5").val(),
+                'answer6': $("#answer6").val(),
+                'answer7': $("#answer7").val(),
+                'answer8': $("#answer8").val(),
+                'answer9': $("#answer9").val(),
+                'answer10': $("#answer10").val(),
+                'addMoreFlag' : '1'
+            },
+            function (data) {
+                if (data != "") {
+                    $("#Service_id").val(data);
+                    $('#Question').val('');
+                    if (answertype == "radio" || answertype == "check") {
+                        $('#answer1').val('');
+                        $('#answer2').val('');
+                        $('#answer3').val('');
+                        $('#answer4').val('');
+                        $('#answer5').val('');
+                        $('#answer6').val('');
+                        $('#answer7').val('');
+                        $('#answer8').val('');
+                        $('#answer9').val('');
+                        $('#answer10').val('');
+                    }
+                   
+                }
+                else {
+                    $("#error_msg_form").show();
+                }
+            })
+    }
+
+    function AddQuestionnare() {
+        if (ValidationEvent()) {
+            addDataToQuestionnareReport();
+        }        
+    }
+
+    function AddMoreQuestionnare() {
+        if (ValidationEvent()) {
+            addMoreDataToQuestionnareReport();
+        }
+    }
+
+
+</script>
